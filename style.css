@@ -1,0 +1,32 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#container {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 1fr 4fr;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#container > div {
+    
+}
+
+#header {
+    grid-column: 2 / 3;
+    background-color: #ffb400;
+}
+
+#side-bar {
+    grid-row: 1 / 3;
+    background-color: #9080ff;
+}
+
+#main-content {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    background-color: #363445;
+}
