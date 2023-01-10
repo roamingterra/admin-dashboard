@@ -1,6 +1,12 @@
+@font-face {
+    font-family: Roboto;
+    src: url(./Roboto/Roboto-Black.ttf);
+}
+
 html, body {
     height: 100%;
     margin: 0;
+    font-family: "Roboto";
 }
 
 #container {
@@ -15,7 +21,7 @@ html, body {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 600px 1fr; /*2fr 1fr*/
     row-gap: 20px;
     padding: 20px 50px;
     background-color: #ffb400;
@@ -25,7 +31,20 @@ html, body {
 
 .search {
     display: flex;
-    align-items: center;
+    gap: 10px;
+}
+
+.search div:first-child {
+    align-self: center;
+    font-size: 1.5rem;
+}
+
+.search-bar {
+    flex-grow: 1;
+    background-color: #363445;
+    border-radius: 20px;
+    margin: 5px 0;
+
 }
 
 .account {
@@ -50,6 +69,7 @@ html, body {
 .user-info {
     display: flex;
     align-items: center;
+    gap: 5px;
 }
 
 .icon-big {
@@ -74,11 +94,11 @@ html, body {
 }
 
 button {
-    padding: 0 20px;
     width: 5rem;
     height: 2rem;
     border-radius: 20px;
     border: none;
+    cursor: pointer;
     color: white;
     background-color: #9080ff;
 }
@@ -247,6 +267,20 @@ button:active {
     .not-logo{
         overflow: hidden;
     }
+
+    #header {
+        grid-template-columns: 600px minmax(1fr, 550px); /*1028px*/
+    }
+
+    .account {
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (max-width: 1028px){
+    #header {
+        grid-template-columns: 2fr 1fr;
+    }
 }
 
 @media screen and (max-width: 802px){
@@ -275,6 +309,18 @@ button:active {
     #header {
         grid-row: 2 / 3;
         grid-column: 1 / 2;
+    }
+
+    .icon-big {
+        font-size: 2rem;
+    }
+
+    button {
+        width: 4rem;
+    }
+
+    .introduction div:last-child {
+        font-size: 1rem;
     }
 
     #main-content {
