@@ -1,6 +1,11 @@
 @font-face {
     font-family: Roboto;
-    src: url(./Roboto/Roboto-Black.ttf);
+    src: url(./Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-black;
+    src: url(./Roboto/Roboto-Black.ttf)
 }
 
 html, body {
@@ -11,7 +16,6 @@ html, body {
 
 #container {
     display: grid;
-    /* grid-template-rows: 100px 1fr; */
     grid-template-columns: 260px 1fr;
     height: 100%;
     box-sizing: border-box;
@@ -21,7 +25,7 @@ html, body {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     display: grid;
-    grid-template-columns: 600px 1fr; /*2fr 1fr*/
+    grid-template-columns: 600px 1fr;
     row-gap: 20px;
     padding: 20px 50px;
     background-color: #ffb400;
@@ -63,7 +67,7 @@ html, body {
 }
 
 .icon-small + div {
-    font-weight: bold;
+    font-family: "Roboto-black";
 }
 
 .user-info {
@@ -78,12 +82,14 @@ html, body {
 
 .introduction div:first-child {
     font-size: 0.9rem;
-    font-weight: bold;
+    font-family: "Roboto-black";
+    /* font-weight: bold; */
 }
 
 .introduction div:last-child {
     font-size: 1.5rem;
-    font-weight: bold;
+    font-family: "Roboto-black";
+    /* font-weight: bold; */
 }
 
 .buttons {
@@ -98,6 +104,7 @@ button {
     height: 2rem;
     border-radius: 20px;
     border: none;
+    font-family: "Roboto-black";
     cursor: pointer;
     color: white;
     background-color: #9080ff;
@@ -125,7 +132,7 @@ button:active {
     gap: 10px;
     color: white;
     font-size: 1.75rem;
-    font-weight: bold;
+    font-family: "Roboto-black";
 }
 
 .options {
@@ -154,7 +161,7 @@ button:active {
 }
 
 .title {
-    font-weight: bold;
+    font-family: "Roboto-black";
 }
 
 .section-name-1 {
@@ -257,7 +264,7 @@ button:active {
 }
 
 .handle > :first-child {
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 @media screen and (max-width: 1264px){
