@@ -14,7 +14,81 @@ html, body {
 #header {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    row-gap: 20px;
+    padding: 20px 50px;
     background-color: #ffb400;
+    box-shadow: 0.5px 5px 4px 0 white;
+    z-index: 100;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.account {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.notification-bell {
+    font-size: 1.25rem;
+}
+
+.icon-small {
+    font-size: 2rem;
+}
+
+.icon-small + div {
+    font-weight: bold;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.icon-big {
+    font-size: 3rem;
+}
+
+.introduction div:first-child {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.introduction div:last-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    padding: 0 20px;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: #9080ff;
+}
+
+button:hover {
+    background-color: #b7acff;
+}
+
+button:active {
+    background-color: #9080ff;
 }
 
 #side-bar {
