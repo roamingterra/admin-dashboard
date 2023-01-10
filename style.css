@@ -5,8 +5,8 @@ html, body {
 
 #container {
     display: grid;
-    grid-template-rows: 145px 1fr;
-    grid-template-columns: 230px 1fr;
+    /* grid-template-rows: 100px 1fr; */
+    grid-template-columns: 260px 1fr;
     height: 100%;
     box-sizing: border-box;
 }
@@ -51,23 +51,119 @@ html, body {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-rows: 40px 1fr;
     grid-template-columns: 3fr 1fr;
+    column-gap: 20px;
+    overflow: auto;
     padding: 20px;
     background-color: #363445;
 }
 
+.title {
+    font-weight: bold;
+}
+
+.section-name-1 {
+    grid-row: 1 / 2;
+    align-self: center;
+    font-size: 1.25rem;
+    color: white;
+}
+
+.section-name-2 {
+    grid-row: 1 / 2;
+    align-self: center;
+    font-size: 1.25rem;
+    color: white;
+}
+
+.section-name-3 {
+    align-self: end;
+    font-size: 1.25rem;
+    color: white;
+}
+
 .your-projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-row: 2 / 3;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    /* height: fit-content; */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
+    /* height: 200px; !!!!!!!!!!!!!!!!!!!!!!!!! */
+    background-color: aliceblue;
+}
+
+.card > .title{
+    margin-bottom: 0;
+}
+
+.card > .title + p {
+    margin-top: 0;
+}
+
+.icons {
+    align-self: end;
+}
+
+.side-content {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: 8fr 1fr 8fr;
+    row-gap: 10px;
+}
+
+.announcements {
+    padding: 20px;
+    border-radius: 5px;
+    height: fit-content;
+    background-color: aliceblue;
+}
+
+[class^="section"] > p{
+    margin: 0;
+}
+
+.section-2 > .title, .section-3 > .title{
+    padding-top: 10px;
+}
+
+.section-1 > .content, .section-2 > .content{
+    padding-bottom: 10px;
+}
+
+.section-1, .section-2 {
+    padding-bottom: 5px;
+    background: linear-gradient(#ffb400 0 0) bottom/ 500px 2px no-repeat;
+}
+
+.announcements > div {
+    font-size: 0.75rem;
+}
+
+.trending {
+    padding: 20px;
+    border-radius: 5px;
+    /* height: fit-content; */
+    background-color: aliceblue;
+}
+
+.trending-item {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 20px;
 }
 
-.card {
-    padding: 20px;
-    border-radius: 5px;
-    background-color: aliceblue;
+.handle > :first-child {
+    font-weight: bold;
 }
 
 @media screen and (max-width: 1264px){
@@ -79,7 +175,7 @@ html, body {
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 802px){
 
     #container {
         grid-template-rows: 48px 145px 1fr;
