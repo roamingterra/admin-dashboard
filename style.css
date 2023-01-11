@@ -8,6 +8,17 @@
     src: url(./Roboto/Roboto-Black.ttf)
 }
 
+:root {
+    --header-color: #ffb400;
+    --shadow-color: lightgray;
+    --main-content-color: #363445;
+    --side-bar-color: #9080ff;
+    --button-hover-color: #b7acff;
+    --side-bar-font-color: white;
+    --main-content-section-title-font-color: white;
+    --card-background-color: white;
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -28,8 +39,8 @@ html, body {
     grid-template-columns: 600px 1fr;
     row-gap: 20px;
     padding: 20px 50px;
-    background-color: #ffb400;
-    box-shadow: 0.5px 5px 4px 0 white;
+    background-color: var(--header-color);
+    box-shadow: 0.5px 5px 4px 0 var(--shadow-color);
     z-index: 100;
 }
 
@@ -47,7 +58,7 @@ html, body {
 
 .search-bar {
     flex-grow: 1;
-    background-color: #363445;
+    background-color: var(--main-content-color);
     border-radius: 20px;
     margin: 5px 0;
 
@@ -58,10 +69,15 @@ html, body {
     justify-content: flex-end;
     align-items: center;
     gap: 20px;
+    color: var(--main-content-color);
 }
 
 .notification-bell {
     font-size: 1.25rem;
+}
+
+.notification-bell > svg {
+    color: var(--main-content-color);
 }
 
 .icon-small > img{
@@ -85,6 +101,7 @@ html, body {
 .introduction {
     display: flex;
     flex-direction: column;
+    color: var(--main-content-color);
 }
 
 .introduction div:first-child {
@@ -113,16 +130,16 @@ button {
     border: none;
     font-family: "Roboto-black";
     cursor: pointer;
-    color: white;
-    background-color: #9080ff;
+    color: var(--side-bar-font-color);
+    background-color: var(--side-bar-color);
 }
 
 button:hover {
-    background-color: #b7acff;
+    background-color: var(--button-hover-color);
 }
 
 button:active {
-    background-color: #9080ff;
+    background-color: var(--side-bar-color);
 }
 
 #side-bar {
@@ -131,14 +148,14 @@ button:active {
     flex-direction: column;
     gap: 50px;
     padding: 25px;
-    background-color: #9080ff;
+    background-color: var(--side-bar-color);
 }
 
 .main-logo > .logo-and-not-logo-group{
     display: flex;
     align-items: center;
     gap: 15px;
-    color: white;
+    color: var(--side-bar-font-color);
     font-size: 1.75rem;
     font-family: "Roboto-black";
 }
@@ -159,7 +176,7 @@ button:active {
     display: flex;
     align-items: center;
     gap: 30px;
-    color: white;
+    color: var(--side-bar-font-color);
     font-size: 1.25rem;
 }
 
@@ -172,7 +189,7 @@ button:active {
     column-gap: 20px;
     overflow: auto;
     padding: 20px;
-    background-color: #363445;
+    background-color: var(--main-content-color);
 }
 
 .title {
@@ -183,20 +200,20 @@ button:active {
     grid-row: 1 / 2;
     align-self: center;
     font-size: 1.25rem;
-    color: white;
+    color: var(--main-content-section-title-font-color);
 }
 
 .section-name-2 {
     grid-row: 1 / 2;
     align-self: center;
     font-size: 1.25rem;
-    color: white;
+    color: var(--main-content-section-title-font-color);
 }
 
 .section-name-3 {
     align-self: end;
     font-size: 1.25rem;
-    color: white;
+    color: var(--main-content-section-title-font-color);
 }
 
 .your-projects {
@@ -213,8 +230,8 @@ button:active {
     padding: 20px;
     border-radius: 5px;
     /* height: 200px; !!!!!!!!!!!!!!!!!!!!!!!!! */
-    background-color: aliceblue;
-    box-shadow: 2px 5px 4px 0 lightgray;
+    background-color: var(--card-background-color);
+    box-shadow: 2px 5px 4px 0 var(--shadow-color);
 }
 
 .card > .title{
@@ -241,8 +258,8 @@ button:active {
     padding: 20px;
     border-radius: 5px;
     height: fit-content;
-    background-color: aliceblue;
-    box-shadow: 2px 5px 4px 0 lightgray;
+    background-color: var(--card-background-color);
+    box-shadow: 2px 5px 4px 0 var(--shadow-color);
 }
 
 [class^="section"] > p{
@@ -259,7 +276,7 @@ button:active {
 
 .section-1, .section-2 {
     padding-bottom: 5px;
-    background: linear-gradient(#ffb400 0 0) bottom/ 100% 2px no-repeat;
+    background: linear-gradient(var(--header-color) 0 0) bottom/ 100% 2px no-repeat;
 }
 
 .announcements > div {
@@ -274,8 +291,8 @@ button:active {
     padding: 20px;
     border-radius: 5px;
     /* height: fit-content; */
-    background-color: aliceblue;
-    box-shadow: 2px 5px 4px 0 lightgray;
+    background-color: var(--card-background-color);
+    box-shadow: 2px 5px 4px 0 var(--shadow-color);
 }
 
 .trending-item {
