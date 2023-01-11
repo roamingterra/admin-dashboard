@@ -62,8 +62,8 @@ html, body {
     font-size: 1.25rem;
 }
 
-.icon-small {
-    font-size: 2rem;
+.icon-small > img{
+    width: 3rem;
 }
 
 .icon-small + div {
@@ -76,8 +76,8 @@ html, body {
     gap: 5px;
 }
 
-.icon-big {
-    font-size: 3rem;
+.icon-big > img {
+    width: 4rem;
 }
 
 .introduction div:first-child {
@@ -261,6 +261,10 @@ button:active {
     flex-direction: row;
     align-items: center;
     gap: 20px;
+}
+
+.logo > img {
+    width: 3rem;
 }
 
 .handle > :first-child {
