@@ -353,6 +353,10 @@ button:active {
         margin-top: 20px;
     }
 
+    .announcements > .section-1,.announcements > .section-2,.announcements > .section-3 {
+        font-size: 1.25rem;
+    }
+
     .side-content {
         grid-row: 4 / 5;
         grid-column: 1 / 2;
