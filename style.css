@@ -40,6 +40,8 @@ html, body {
 
 .search div:first-child {
     align-self: center;
+    position: relative;
+    top: 4px;
     font-size: 1.5rem;
 }
 
