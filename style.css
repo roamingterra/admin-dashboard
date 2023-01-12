@@ -9,11 +9,11 @@
 }
 
 :root {
-    --header-color: white; /*#ffb400*/
+    --header-color: white;
     --header-font-color: black;
     --shadow-color: lightgray;
-    --main-content-color: #f5d0fe;  /*#363445*/
-    --side-bar-color: #d946ef; /*#9080ff*/
+    --main-content-color: #f5d0fe; 
+    --side-bar-color: #d946ef; 
     --button-hover-color: #e19cf3;
     --side-bar-font-color: white;
     --main-content-section-title-font-color: black;
