@@ -9,13 +9,14 @@
 }
 
 :root {
-    --header-color: #ffb400;
+    --header-color: white; /*#ffb400*/
+    --header-font-color: black;
     --shadow-color: lightgray;
-    --main-content-color: #363445;
-    --side-bar-color: #9080ff;
+    --main-content-color: #f5d0fe;  /*#363445*/
+    --side-bar-color: #d946ef; /*#9080ff*/
     --button-hover-color: #b7acff;
     --side-bar-font-color: white;
-    --main-content-section-title-font-color: white;
+    --main-content-section-title-font-color: black;
     --card-background-color: white;
 }
 
@@ -70,7 +71,7 @@ html, body {
     justify-content: flex-end;
     align-items: center;
     gap: 20px;
-    color: var(--main-content-color);
+    color: var(--header-font-color);
 }
 
 .notification-bell {
@@ -78,7 +79,7 @@ html, body {
 }
 
 .notification-bell > svg {
-    color: var(--main-content-color);
+    color: var(--header-font-color);
 }
 
 .icon-small > img{
@@ -102,7 +103,7 @@ html, body {
 .introduction {
     display: flex;
     flex-direction: column;
-    color: var(--main-content-color);
+    color: var(--header-font-color);
 }
 
 .introduction div:first-child {
